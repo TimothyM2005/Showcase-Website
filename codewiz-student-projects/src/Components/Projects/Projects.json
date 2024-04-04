@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "project_Name": "Haptic Glove",
+        "description": "The development of a haptic glove for virtual reality. Designing and making a glove that fits around the user's hand and will read the position of the fingers",
+        "image": "",
+        "coach": "Timothy Mitchell",
+        "students": "Mateo, Aiden" 
+    }
+]
