@@ -1,6 +1,6 @@
 import Header from './Components/Header/header';
 import Sidebar from './Components/Side_Bar/side_bar';
-import Project from './Components/Projects/projects';
+import Project from './Components/Projects/projects_card';
 import './App.css';
 
 function App() {
