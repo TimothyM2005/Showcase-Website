@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 const Project_Card = ({image, project_Name, description, coach, students}) =>{
-
   return (
     <div className = "projects">
       {data.projects.map((item) => (

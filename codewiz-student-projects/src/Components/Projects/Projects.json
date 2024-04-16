@@ -3,10 +3,18 @@
         {
             "id": 1,
             "project_Name": "Haptic Glove",
-            "description": "The development of a haptic glove for virtual reality. Designing and making a glove that fits around the user's hand and will read the position of the fingers",
+            "description": "The development of a haptic glove for virtual reality. Designing and making a glove that fits around the",
             "image": "https://es.celoxis.com/cassets/img/pmc/project-management.png",
             "coach": "Timothy Mitchell",
             "students": "Mateo, Aiden" 
+        },
+        {
+            "id": 2,
+            "project_Name": "FIRST Tech Challenge Robotics",
+            "description": "A Group of students competing in the FIRST Tech Challenge competition center stage. ",
+            "image": "https://es.celoxis.com/cassets/img/pmc/project-management.png",
+            "coach": "Timothy Mitchell",
+            "students": "Ryan, Veer" 
         }
     ]
 }
