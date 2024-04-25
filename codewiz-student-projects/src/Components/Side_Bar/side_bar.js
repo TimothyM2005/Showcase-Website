@@ -1,5 +1,7 @@
 import "./side_bar.css"
 
+// Unity unreal scratch 
+
 const Sidebar = () => {
     return(
         <div class="sidenav">
@@ -8,6 +10,7 @@ const Sidebar = () => {
             <a href="#clients">Python</a>
             <a href="#contact">Roblox</a>
             <a href="#contact">Minecraft</a>
+            
         </div>
 
     )
