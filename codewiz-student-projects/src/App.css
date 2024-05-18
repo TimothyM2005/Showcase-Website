@@ -1,9 +1,153 @@
-* {
+/* App.css */
+
+/* Ensure body and html take full height */
+body, html {
   margin: 0;
   padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #003366; /* Dark Blue */
+  color: white;
+  padding: 20px 40px; /* Increase padding for better appearance */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fix the header to the top */
+  width: 100%; /* Ensure it covers the full width */
+  top: 0; /* Position it at the top */
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.header h1 {
+  font-size: 28px; /* Increase font size */
+  margin: 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 20px; /* Increase gap between nav items */
+}
+
+.header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Increase font size */
+  transition: color 0.3s;
+}
+
+.header nav a:hover {
+  color: #ff6600; /* Orange */
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 80px; /* Adjust for header height */
+  left: 0;
+  background-color: #003366; /* Dark Blue */
+  padding-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it's below the header */
+}
+
+.sidenav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidenav a:hover {
+  background-color: #ff6600; /* Orange */
+  color: white;
+}
+
+.main-content {
+  margin-left: 270px; /* Adjust for sidebar width */
+  margin-top: 100px; /* Adjust for header height */
+  padding: 20px;
+  flex: 1;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #f0f4f8;
+}
+
+.Card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project_image {
+  max-width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.CardBody {
+  padding: 15px;
+}
+
+.CardBody .CardTitle {
+  font-size: 20px;
+  color: #003366; /* Dark Blue */
+  margin-bottom: 10px;
+}
+
+.CardBody .CardText {
+  font-size: 16px;
+  color: #333; /* Dark Grey */
+  margin-bottom: 10px;
+}
+
+.ButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+  background-color: #f0f4f8;
+}
+
+.Card-Button {
+  background-color: #ff6600; /* Orange */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.Card-Button:hover {
+  background-color: #cc5200; /* Darker Orange */
+}
+
+footer {
+  background-color: #003366; /* Dark Blue */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

@@ -1,25 +1,27 @@
+/* side_bar.css */
+
 .sidenav {
-  margin-top: 50px;
   height: 100%;
-  width: 10%;
+  width: 250px;
   position: fixed;
-  z-index: 1;
-  top: 0;
+  top: 80px; /* Adjust for header height */
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  background-color: #003366; /* Dark Blue */
   padding-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* Ensure it's below the header */
 }
 
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  padding: 10px 20px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 18px;
+  color: white;
   display: block;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
-  font-weight: bold;
+  background-color: #ff6600; /* Orange */
+  color: white;
 }
