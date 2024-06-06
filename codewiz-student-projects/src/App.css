@@ -1,153 +1,161 @@
-/* App.css */
-
-/* Ensure body and html take full height */
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #f0f4f8; /* Light background color */
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-#root {
+.main {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.header {
-  background-color: #003366; /* Dark Blue */
-  color: white;
-  padding: 20px 40px; /* Increase padding for better appearance */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: fixed; /* Fix the header to the top */
-  width: 100%; /* Ensure it covers the full width */
-  top: 0; /* Position it at the top */
-  z-index: 1000; /* Ensure it is above other elements */
-}
-
-.header h1 {
-  font-size: 28px; /* Increase font size */
-  margin: 0;
-}
-
-.header nav {
-  display: flex;
-  gap: 20px; /* Increase gap between nav items */
-}
-
-.header nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px; /* Increase font size */
-  transition: color 0.3s;
-}
-
-.header nav a:hover {
-  color: #ff6600; /* Orange */
 }
 
 .sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 80px; /* Adjust for header height */
-  left: 0;
-  background-color: #003366; /* Dark Blue */
+  width: 200px;
+  background-color: #f47d20; /* Primary cyan color */
   padding-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* Ensure it's below the header */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidenav a {
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: black;
   display: block;
-  transition: background-color 0.3s, color 0.3s;
 }
 
 .sidenav a:hover {
-  background-color: #ff6600; /* Orange */
-  color: white;
+  background-color: #FFA500; /* Orange on hover */
 }
 
-.main-content {
-  margin-left: 270px; /* Adjust for sidebar width */
-  margin-top: 100px; /* Adjust for header height */
+.content {
+  margin-left: 200px;
   padding: 20px;
-  flex: 1;
+  width: 100%;
+}
+
+.Header {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.Title {
+  margin: 0;
+  font-size: 24px;
 }
 
 .projects {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: #f0f4f8;
+  justify-content: center;
 }
 
 .Card {
-  background-color: white;
-  border-radius: 8px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.Card:hover {
+  transform: scale(1.05);
 }
 
 .project_image {
-  max-width: 100%;
-  height: auto;
-  border-bottom: 1px solid #ddd;
+  height: 200px;
+  object-fit: cover;
 }
 
 .CardBody {
-  padding: 15px;
+  padding: 20px;
 }
 
-.CardBody .CardTitle {
+.CardTitle {
   font-size: 20px;
-  color: #003366; /* Dark Blue */
-  margin-bottom: 10px;
+  color: #f47d20; /* Cyan */
 }
 
-.CardBody .CardText {
-  font-size: 16px;
-  color: #333; /* Dark Grey */
+.CardText {
+  color: #555;
   margin-bottom: 10px;
 }
 
 .ButtonDiv {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  border-top: 1px solid #ddd;
-  background-color: #f0f4f8;
+  padding: 10px;
 }
 
 .Card-Button {
-  background-color: #ff6600; /* Orange */
-  color: white;
+  background-color: #FFA500; /* Orange */
   border: none;
+  color: white;
   padding: 10px 20px;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
 }
 
 .Card-Button:hover {
-  background-color: #cc5200; /* Darker Orange */
+  background-color: #e59400; /* Darker orange */
 }
 
-footer {
-  background-color: #003366; /* Dark Blue */
-  color: white;
+.add-project, .project-details {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-project h2, .project-details h2 {
   text-align: center;
+  color: #f47d20; /* Cyan */
+  margin-bottom: 20px;
+}
+
+.add-project form, .project-details div {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-project label {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-project input[type="text"], .project-details p {
   padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-project button, .project-details button {
+  padding: 10px 20px;
+  background-color: #f47d20; /* Cyan */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-project button:hover, .project-details button:hover {
+  background-color: #f47d20; /* Darker cyan */
+}
+
+.project-details img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }

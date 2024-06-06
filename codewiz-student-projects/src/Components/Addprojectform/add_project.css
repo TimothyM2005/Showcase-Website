@@ -1,0 +1,48 @@
+.add-project {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-project h2 {
+  text-align: center;
+  color: #f47d20; /* Cyan */
+  margin-bottom: 20px;
+}
+
+.add-project form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-project label {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-project input[type="text"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.add-project button {
+  padding: 10px 20px;
+  background-color: #f47d20;
+  color: #f47d20;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-project button:hover {
+  background-color: #e05b0e;
+}

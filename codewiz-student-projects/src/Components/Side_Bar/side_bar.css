@@ -1,27 +1,50 @@
-/* side_bar.css */
-
 .sidenav {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  top: 80px; /* Adjust for header height */
-  left: 0;
-  background-color: #003366; /* Dark Blue */
+  width: 200px;
+  background-color: #ffffff; /* Primary cyan color */
   padding-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* Ensure it's below the header */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
 .sidenav a {
-  padding: 10px 20px;
+  padding: 15px 20px;
   text-decoration: none;
   font-size: 18px;
-  color: white;
+  color: black;
   display: block;
-  transition: background-color 0.3s, color 0.3s;
+}@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Importing Google Font */
+
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Apply the font to the body */
+}
+
+.sidenav {
+  width: 200px;
+  background-color: #ffffff; /* Match the header's blue color */
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-family: 'Roboto', Arial, sans-serif; /* Apply the font to the sidenav */
+}
+
+.sidenav a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ff6f00; /* Match the initial button color */
+  display: block;
+  font-weight: 700; /* Bold font for links */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
 }
 
 .sidenav a:hover {
-  background-color: #ff6600; /* Orange */
-  color: white;
+  background-color: #e25300; /* Darken button color on hover */
+  color: #000000; /* Change text color to white on hover */
+}
+
+
+.sidenav a:hover {
+  background-color: #ff6600; /* Orange on hover */
 }

@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "project_Name": "Haptic Glove",
+      "description": "The development of a haptic glove for virtual reality. Designing and making a glove that fits around the",
+      "image": "https://es.celoxis.com/cassets/img/pmc/project-management.png",
+      "coach": "Timothy Mitchell",
+      "students": "Mateo, Aiden",
+      "category": "Robotics"
+    },
+    {
+      "id": 2,
+      "project_Name": "Minecraft",
+      "description": "Working on a minecraftmod",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLGK0YU8aCUsb8q9OaszZQ3UL7j92wTOy5mr-lKG7IAQ&s",
+      "coach": "Tim",
+      "students": "Greg",
+      "category": "Minecraft"
+    }
+  ]
+}

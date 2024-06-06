@@ -1,64 +1,57 @@
-/* projects_card.css */
-
 .projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    margin-left: 270px; /* Adjust for sidebar width */
-    margin-top: 100px; /* Adjust for header height */
-    background-color: #f0f4f8;
-  }
-  
-  .Card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .project_image {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .CardBody {
-    padding: 15px;
-  }
-  
-  .CardBody .CardTitle {
-    font-size: 20px;
-    color: #003366; /* Dark Blue */
-    margin-bottom: 10px;
-  }
-  
-  .CardBody .CardText {
-    font-size: 16px;
-    color: #333; /* Dark Grey */
-    margin-bottom: 10px;
-  }
-  
-  .ButtonDiv {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    border-top: 1px solid #ddd;
-    background-color: #f0f4f8;
-  }
-  
-  .Card-Button {
-    background-color: #ff6600; /* Orange */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .Card-Button:hover {
-    background-color: #cc5200; /* Darker Orange */
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.Card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+.project_image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.CardBody {
+  padding: 20px;
+}
+
+.CardTitle {
+  font-size: 20px;
+  color: #f47d20; /* Cyan */
+}
+
+.CardText {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.ButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Card-Button {
+  background-color: #FFA500; /* Orange */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Card-Button:hover {
+  background-color: #e59400; /* Darker orange */
+}
